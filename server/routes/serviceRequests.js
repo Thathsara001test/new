@@ -1,8 +1,6 @@
 const express = require('express');
 const { body, query, validationResult } = require('express-validator');
-const ServiceRequest = require('../models/ServiceRequest');
-const Material = require('../models/Material');
-const Vehicle = require('../models/Vehicle');
+const { ServiceRequest, Material, Vehicle } = require('../models');
 const auth = require('../middleware/auth');
 const sendEmail = require('../utils/sendEmail');
 

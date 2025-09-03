@@ -1,6 +1,6 @@
 const express = require('express');
 const { body, query, validationResult } = require('express-validator');
-const Vehicle = require('../models/Vehicle');
+const { Vehicle } = require('../models');
 const auth = require('../middleware/auth');
 const partnerAuth = require('../middleware/partnerAuth');
 

@@ -1,4 +1,4 @@
-const Partner = require('../models/Partner');
+const { Partner } = require('../models');
 
 const partnerAuth = async (req, res, next) => {
   try {

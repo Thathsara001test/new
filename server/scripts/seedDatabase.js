@@ -1,5 +1,4 @@
 const { User, Partner, Material, Vehicle, syncDatabase } = require('../models');
-const bcrypt = require('bcryptjs');
 
 const seedData = async () => {
   try {

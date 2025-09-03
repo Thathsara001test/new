@@ -11,7 +11,7 @@ const Partner = sequelize.define('Partner', {
     type: DataTypes.UUID,
     allowNull: false,
     references: {
-      model: 'users',
+      model: 'User',
       key: 'id'
     }
   },
@@ -97,7 +97,7 @@ const Partner = sequelize.define('Partner', {
     type: DataTypes.UUID,
     allowNull: true,
     references: {
-      model: 'users',
+      model: 'User',
       key: 'id'
     }
   },

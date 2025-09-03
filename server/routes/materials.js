@@ -1,6 +1,6 @@
 const express = require('express');
 const { body, query, validationResult } = require('express-validator');
-const Material = require('../models/Material');
+const { Material } = require('../models');
 const auth = require('../middleware/auth');
 const partnerAuth = require('../middleware/partnerAuth');
 

@@ -11,7 +11,7 @@ const Material = sequelize.define('Material', {
     type: DataTypes.UUID,
     allowNull: false,
     references: {
-      model: 'partners',
+      model: 'Partner',
       key: 'id'
     }
   },

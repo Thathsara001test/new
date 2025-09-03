@@ -42,6 +42,11 @@ export const VehicleDetails: React.FC<VehicleDetailsProps> = ({ vehicle, onBack 
                 alt={vehicle.name}
                 className="w-full h-96 object-cover rounded-2xl shadow-lg mb-6"
               />
+              <img 
+                src={vehicle.image} 
+                alt={vehicle.name}
+                className="w-full h-96 object-cover rounded-2xl shadow-lg mb-6"
+              />
               <div className="bg-white rounded-2xl p-6 shadow-lg">
                 <h2 className="text-2xl font-bold text-gray-900 mb-4">Vehicle Details</h2>
                 <p className="text-gray-600 mb-6 leading-relaxed">{vehicle.description}</p>

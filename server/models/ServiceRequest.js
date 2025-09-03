@@ -11,7 +11,7 @@ const ServiceRequest = sequelize.define('ServiceRequest', {
     type: DataTypes.UUID,
     allowNull: false,
     references: {
-      model: 'users',
+      model: 'User',
       key: 'id'
     }
   },
@@ -23,7 +23,7 @@ const ServiceRequest = sequelize.define('ServiceRequest', {
     type: DataTypes.UUID,
     allowNull: true,
     references: {
-      model: 'materials',
+      model: 'Material',
       key: 'id'
     }
   },
@@ -31,7 +31,7 @@ const ServiceRequest = sequelize.define('ServiceRequest', {
     type: DataTypes.UUID,
     allowNull: true,
     references: {
-      model: 'vehicles',
+      model: 'Vehicle',
       key: 'id'
     }
   },
@@ -97,7 +97,7 @@ const ServiceRequest = sequelize.define('ServiceRequest', {
     type: DataTypes.UUID,
     allowNull: true,
     references: {
-      model: 'partners',
+      model: 'Partner',
       key: 'id'
     }
   },
